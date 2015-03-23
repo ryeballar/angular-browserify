@@ -1,0 +1,24 @@
+{
+  "name": "angular-browserify",
+  "version": "0.0.0",
+  "authors": [
+    "Ryan Eballar <ryeballar@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.13"
+  },
+  "overrides": {
+	"angular": {
+		"ignore": true
+	}
+  }
+
+}
