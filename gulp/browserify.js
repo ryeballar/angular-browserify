@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
-	browserify = require('browserify'),
-	watchify = require('watchify'),
-	vinylSource = require('vinyl-source-stream');
+browserify = require('browserify'),
+watchify = require('watchify'),
+vinylSource = require('vinyl-source-stream');
 
 var bundler;
 var source = './src/app/index.js';
@@ -20,8 +20,8 @@ gulp.task('browserify.build', function() {
 
 function bundle() {
 	return bundler.bundle()
-		.on('error', function(err) { console.log(err); })
-		.pipe(vinylSource('index.js'))
-		.pipe(gulp.dest(destination));
+	.on('error', function(err) { console.log(err); })
+	.pipe(vinylSource('index.js'))
+	.pipe(gulp.dest(destination));
 }
 
